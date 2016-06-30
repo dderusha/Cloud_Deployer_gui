@@ -12,8 +12,8 @@ import boto3
 # TODO (dohare) (before deployment) make functions to get credentials
 #      accept username/password in args or raw_input()
 
-AWS_ACCESS = 'AKIAINWX2M4XPTO3NM5A'
-AWS_SECRET = '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'
+AWS_ACCESS = ''
+AWS_SECRET = ''
 REGION = 'us-east-1'
 BUCKET = 'jamfbde1211c73854fcdab1a39a397c87cd3'
 
