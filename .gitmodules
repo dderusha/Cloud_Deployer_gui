@@ -1,0 +1,3 @@
+[submodule "ma2016gui"]
+	path = ma2016gui
+	url = https://github.com/brysontyrrell/MacAdmins-2016-Craft-GUIs-with-Python-and-Tkinter
