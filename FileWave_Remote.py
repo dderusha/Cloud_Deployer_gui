@@ -22,13 +22,13 @@ class EntryApp(tk.Frame):
         self.pack()
 
         tk.Label(self, text="Enter AWS_ACCESS code").pack()
-
-        self.entry = tk.Entry(self,textvariable='AWS_ACCESS', bg='white')
+        AWS_ACCESS = StringVar()
+        self.entry = tk.Entry(self,textvariable=AWS_ACCESS, bg='white')
         self.entry.pack()
 
         tk.Label(self, text="Enter AWS_SECRET code").pack()
 
-        self.secret_entry = tk.Entry(self, show='*',textvariable='AWS_SECRET', bg='white')
+        self.secret_entry = tk.Entry(self, show='*',textvariable=AWS_SECRET, bg='white')
         self.secret_entry.pack()
 
         tk.Button(self, text='OK', command=self.ok).pack()
