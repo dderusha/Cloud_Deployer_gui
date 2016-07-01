@@ -36,8 +36,6 @@ class EntryApp(tk.Frame):
     def ok(self):
         print('Text box: {}\nSecret box: {}'.format(self.entry.get(), self.secret_entry.get()))
 
-AWS_ACCESS = ''
-AWS_SECRET = ''
 REGION = 'us-east-1'
 BUCKET = 'jamfbde1211c73854fcdab1a39a397c87cd3'
 
