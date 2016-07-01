@@ -7,10 +7,34 @@ import platform
 import subprocess
 import argparse
 import boto3
+import Tkinter as tk
+import ttk
+import AppKit
 
 # download_File = 'i1match 362.dmg'
 # TODO (dohare) (before deployment) make functions to get credentials
 #      accept username/password in args or raw_input()
+
+#class for user entry
+class EntryApp(tk.Frame):
+    def __init__(self, master):
+        tk.Frame.__init__(self, master)
+        self.pack()
+
+        tk.Label(self, text="Enter AWS_ACCESS code").pack()
+
+        self.entry = tk.Entry(self,textvariable='AWS_ACCESS', bg='white')
+        self.entry.pack()
+
+        tk.Label(self, text="Enter AWS_SECRET code").pack()
+
+        self.secret_entry = tk.Entry(self, show='*',textvariable='AWS_SECRET', bg='white')
+        self.secret_entry.pack()
+
+        tk.Button(self, text='OK', command=self.ok).pack()
+
+    def ok(self):
+        print('Text box: {}\nSecret box: {}'.format(self.entry.get(), self.secret_entry.get()))
 
 AWS_ACCESS = ''
 AWS_SECRET = ''
