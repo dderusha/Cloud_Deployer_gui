@@ -28,7 +28,7 @@ class App(tk.Frame):
 
         tk.Label(dialog_frame, text='Username:').grid(row=0, column=0, sticky='w')
 
-        self.user_input = tk.Entry(dialog_frame, background='white', width=24)
+        self.user_input = tk.Entry(dialog_frame,textvariable= background='white', width=24)
         self.user_input.grid(row=0, column=1, sticky='w')
         self.user_input.focus_set()
 

@@ -57,6 +57,10 @@ def showwin():
     # a sheet paper before writing your code.
     gif = Tkinter.PhotoImage(data = gifBase)
     displayGif = Tkinter.Label(root, image = gif, borderwidth = 10, bg = bgColor).grid(row = 0, rowspan = 6, columnspan = 2)
+# This Label widget displays text. I've defined the font and size I want it
+    # displayed. I'm also using additional parameters to add padding around the widget
+    # and its alignment within the grid space.
+    Tkinter.Label(root, text = "Select the logs you wish to upload:", font=("Helvetica Neue Bold", 14), bg = bgColor).grid(row = 0, column = 2, columnspan = 3, padx = (0, 10), pady = (10, 5), sticky = 'w')
 
 
 # The two buttons for triggering actions in our GUI will be drawn in the lower-

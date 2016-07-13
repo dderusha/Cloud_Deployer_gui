@@ -15,7 +15,6 @@ class App:
     def __init__(self):
         # This first line initializes our GUI.
         self.root = Tkinter.Tk()
-        
 
         # This line will force our window on top of all other windows and remain there.
         self.root.call('wm', 'attributes', '.', '-topmost', True)
@@ -39,7 +38,7 @@ class App:
         # to X,Y coordinates which makes designing your GUI as easy as plotting it out on
         # a sheet paper before writing your code.
         gif = Tkinter.PhotoImage(data = gifBase)
-        displayGif = Tkinter.Label(self.root, image = gif, borderwidth = 10, bg = bgColor).grid(row = 0, rowspan = 6, columnspan= 2)
+        displayGif = Tkinter.Label(self.root, image = gif, borderwidth = 10, bg = bgColor).grid(row = 0, rowspan = 6, columnspan = 2)
 
         # This Label widget displays text. I've defined the font and size I want it
         # displayed. I'm also using additional parameters to add padding around the widget
